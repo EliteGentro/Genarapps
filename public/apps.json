@@ -28,12 +28,12 @@
         }
       ],
       "features": [
-        "A reader with adjustable text size, spacing, width and colors",
+        "A reader with adjustable font, text size, spacing, width and colors, plus Bishop Challoner’s notes if you want them",
         "Highlights in five colors, with notes you can filter in one list",
         "Normal search by keyword or reference, and Smart search by meaning",
-        "A study chat with related passages, powered by Apple Intelligence on your device",
+        "A study chat with related passages, using Apple Intelligence on your device",
         "Listen mode, which reads chapters aloud verse by verse",
-        "A Daily Verse widget in three sizes with a reading streak, plus optional daily reminders"
+        "A Daily Verse widget in three sizes with a day streak, plus optional daily reminders"
       ],
       "icon": "/apps/frible/icon.png",
       "screenshots": [
@@ -71,7 +71,8 @@
           "Frible doesn’t collect any data. I can’t see what you read, highlight or ask.",
           "Your highlights, notes and settings are stored only on your device.",
           "Search and the study chat run on your device. Frible makes no network requests.",
-          "There are no accounts, ads, analytics or tracking."
+          "There are no accounts, ads, analytics or tracking.",
+          "If you email me, for example to report a chat answer, you choose what to send."
         ],
         "glance": [
           {
@@ -107,7 +108,8 @@
             "id": "information-collected",
             "title": "Information I collect",
             "paragraphs": [
-              "None. Frible has no accounts and no servers, and it contains no analytics, advertising or crash-reporting tools. Frible makes no network requests, so nothing you do in the app is sent to me or to anyone else."
+              "None. Frible has no accounts and no servers, and it contains no analytics, advertising or crash-reporting tools. Frible makes no network requests, so nothing you do in the app is sent to me or to anyone else, unless you choose to email me (see Contacting me).",
+              "If you’ve turned on Share With App Developers in your device’s Analytics settings, Apple may share anonymous crash reports with me. Apple handles that under its own privacy policy, and you can turn it off at any time."
             ]
           },
           {
@@ -118,9 +120,10 @@
             ],
             "items": [
               "Highlights and notes: the verses you mark, the color, your note and when you created or changed it.",
-              "Reader settings: text size, spacing, width and colors.",
-              "Daily Verse data: the verse of the day, your reading streak, the last day you opened the app and a random number used to pick verses. The app shares this with its widget on the same device.",
-              "Reminder settings: whether daily verse reminders are on, and at what time."
+              "Reader settings: font, text size, spacing, width, colors, and whether Bishop Challoner’s notes are shown.",
+              "Daily Verse data: your day streak (how many days in a row you’ve opened Frible), the last day you opened it, and a random number used to pick the verse of the day. The app shares these with its widget on the same device. The verses themselves come from the Bible text built into the app.",
+              "Reminder settings: whether daily verse reminders are on, and at what time.",
+              "The Bible text and search index, set up on your device the first time you open Frible. They contain nothing about you."
             ]
           },
           {
@@ -134,9 +137,10 @@
             "id": "ai",
             "title": "Smart search and the study chat",
             "paragraphs": [
-              "Smart search uses a language model built into the app to find verses by meaning. The study chat uses Apple Intelligence, Apple’s on-device model. Your questions and the answers are processed on your device and are never sent to me.",
-              "Chat conversations are not saved. They are cleared when you tap the clear button or when the app closes. The chat needs a device that supports Apple Intelligence, with it turned on.",
-              "Answers come from an AI model and can be wrong. Check them against the text."
+              "Smart search uses a language model built into the app to find verses by meaning. The study chat uses Apple Intelligence, Apple’s on-device model. Your questions and the answers are processed on your device and are never sent to me, unless you choose to report an answer (see Contacting me).",
+              "Chat conversations are not saved. They are cleared when you tap New Conversation in the chat or when the app closes. The chat needs a device that supports Apple Intelligence, with it turned on.",
+              "Answers come from an AI model and can be wrong. Check them against the text.",
+              "If a message mentions self-harm or abuse, the chat also shows crisis-line contacts. Tapping one opens your Phone, Messages or Safari app; Frible itself sends nothing."
             ]
           },
           {
@@ -153,7 +157,16 @@
             "id": "sharing",
             "title": "Sharing",
             "paragraphs": [
-              "Frible never shares anything on its own. When you copy a verse, it goes to your device’s clipboard, and you decide where to paste it."
+              "Frible never shares anything on its own. When you copy a verse or a chat answer, it goes to your device’s clipboard, and you decide where to paste it.",
+              "Links in the app, such as this policy, the support page and crisis lines, open in Safari, Phone or Messages only when you tap them."
+            ]
+          },
+          {
+            "id": "contact",
+            "title": "Contacting me and reporting an answer",
+            "paragraphs": [
+              "Contact Support in Settings and Report Response in the chat open an email in your own mail app, addressed to me. A report fills in the reason you picked, your question and the answer, so I can see what went wrong. You can edit or delete any of it before sending, and nothing is sent unless you send it.",
+              "I use these emails only to answer you and to fix problems in Frible, and I don’t sell or share them. To have our emails deleted, ask me at the same address."
             ]
           },
           {
@@ -161,8 +174,9 @@
             "title": "Deleting your data",
             "items": [
               "Remove a highlight or note by swiping it in the Notes tab, or with Remove annotation in the editor.",
-              "Reset reader settings with Reset to Defaults in Appearance.",
-              "Clear a chat with the clear button.",
+              "Reset reader settings with Reset to Defaults in Settings › Reading Appearance.",
+              "Turn off Daily Verse Notification in Settings › Notifications to remove scheduled reminders.",
+              "Clear a chat with New Conversation in the chat.",
               "Delete the Frible app to erase everything it stored on your device."
             ]
           },
@@ -190,6 +204,10 @@
         {
           "question": "Why can’t I use the study chat?",
           "answer": "The chat uses Apple Intelligence. It needs a device that supports Apple Intelligence, with Apple Intelligence turned on in Settings. Everything else in Frible works without it."
+        },
+        {
+          "question": "How do I report a wrong or harmful chat answer?",
+          "answer": "Touch and hold the answer and choose Report Response. It opens an email with your question and the answer, which you can review before sending."
         },
         {
           "question": "Which translation is included?",
