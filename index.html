@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="description" content="Privacy policies, support and screenshots for every GenarApps app." />
+    <meta name="theme-color" content="#F2F4EE" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#17202A" media="(prefers-color-scheme: dark)" />
+    <meta property="og:site_name" content="GenarApps" />
+    <meta property="og:title" content="GenarApps" />
+    <meta property="og:description" content="Privacy policies, support and screenshots for every GenarApps app." />
+    <title>GenarApps</title>
+    <script>
+      // Apply a saved theme before first paint so the page never flashes the wrong colors.
+      try {
+        var theme = localStorage.getItem('genarapps-theme')
+        if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <p style="padding: 24px; font-family: sans-serif">
+        This site needs JavaScript to show the app catalog. For help, write to elitegentro@gmail.com.
+      </p>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

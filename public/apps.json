@@ -1,0 +1,620 @@
+{
+  "site": {
+    "name": "GenarApps",
+    "supportEmail": "elitegentro@gmail.com",
+    "responseTime": "a few days"
+  },
+  "apps": [
+    {
+      "slug": "frible",
+      "name": "Frible",
+      "tagline": "Read, search and study the Bible, all offline.",
+      "description": [
+        "Frible is a Bible app that works without an internet connection. The full Douay-Rheims Bible (Challoner revision, 1899 edition), a public-domain translation, is on your device from the first launch.",
+        "Highlight verses in five colors, write notes, and find passages by keyword, by reference like John 3:16, or by meaning with Smart search. On devices with Apple Intelligence, a study chat answers questions about a passage and suggests related verses. All of it, including the AI, runs on your device."
+      ],
+      "accent": "mint",
+      "status": "coming-soon",
+      "version": "1.0",
+      "category": "Reference",
+      "platforms": [
+        {
+          "device": "iphone",
+          "requires": "iOS 26.0 or later"
+        },
+        {
+          "device": "ipad",
+          "requires": "iPadOS 26.0 or later"
+        }
+      ],
+      "features": [
+        "A reader with adjustable text size, spacing, width and colors",
+        "Highlights in five colors, with notes you can filter in one list",
+        "Normal search by keyword or reference, and Smart search by meaning",
+        "A study chat with related passages, powered by Apple Intelligence on your device",
+        "Listen mode, which reads chapters aloud verse by verse",
+        "A Daily Verse widget in three sizes with a reading streak, plus optional daily reminders"
+      ],
+      "icon": "/apps/frible/icon.png",
+      "screenshots": [
+        {
+          "src": "/apps/frible/screenshots/01.png",
+          "caption": "Reader",
+          "alt": "Frible screenshot: a chapter open in the reader"
+        },
+        {
+          "src": "/apps/frible/screenshots/02.png",
+          "caption": "Highlights",
+          "alt": "Frible screenshot: highlighted verses with a note"
+        },
+        {
+          "src": "/apps/frible/screenshots/03.png",
+          "caption": "Search",
+          "alt": "Frible screenshot: search results for a keyword"
+        },
+        {
+          "src": "/apps/frible/screenshots/04.png",
+          "caption": "Study chat",
+          "alt": "Frible screenshot: the study chat answering a question about a passage"
+        },
+        {
+          "src": "/apps/frible/screenshots/05.png",
+          "caption": "Daily Verse",
+          "alt": "Frible screenshot: the Daily Verse widget on the Home Screen"
+        }
+      ],
+      "supportEmail": "elitegentro@gmail.com",
+      "links": {},
+      "privacy": {
+        "updated": "2026-10-06",
+        "summary": [
+          "Frible doesn’t collect any data. I can’t see what you read, highlight or ask.",
+          "Your highlights, notes and settings are stored only on your device.",
+          "Search and the study chat run on your device. Frible makes no network requests.",
+          "There are no accounts, ads, analytics or tracking."
+        ],
+        "glance": [
+          {
+            "label": "Data collected",
+            "value": "None"
+          },
+          {
+            "label": "Tracking",
+            "value": "None"
+          },
+          {
+            "label": "Where data lives",
+            "value": "On your device only"
+          },
+          {
+            "label": "Account",
+            "value": "Not needed"
+          },
+          {
+            "label": "Internet",
+            "value": "Not used"
+          }
+        ],
+        "sections": [
+          {
+            "id": "who",
+            "title": "Who this policy is from",
+            "paragraphs": [
+              "Frible is made by GenarApps, an independent developer. This policy explains what happens to your information when you use Frible on iPhone and iPad. “I” in this policy means the developer."
+            ]
+          },
+          {
+            "id": "information-collected",
+            "title": "Information I collect",
+            "paragraphs": [
+              "None. Frible has no accounts and no servers, and it contains no analytics, advertising or crash-reporting tools. Frible makes no network requests, so nothing you do in the app is sent to me or to anyone else."
+            ]
+          },
+          {
+            "id": "on-your-device",
+            "title": "What stays on your device",
+            "paragraphs": [
+              "To work, Frible saves this information on your device:"
+            ],
+            "items": [
+              "Highlights and notes: the verses you mark, the color, your note and when you created or changed it.",
+              "Reader settings: text size, spacing, width and colors.",
+              "Daily Verse data: the verse of the day, your reading streak, the last day you opened the app and a random number used to pick verses. The app shares this with its widget on the same device.",
+              "Reminder settings: whether daily verse reminders are on, and at what time."
+            ]
+          },
+          {
+            "id": "backups",
+            "title": "Backups",
+            "paragraphs": [
+              "This information is included in your device’s own backups (for example iCloud Backup, if you have it turned on), which Apple handles under its own privacy policy. Frible doesn’t sync it anywhere else."
+            ]
+          },
+          {
+            "id": "ai",
+            "title": "Smart search and the study chat",
+            "paragraphs": [
+              "Smart search uses a language model built into the app to find verses by meaning. The study chat uses Apple Intelligence, Apple’s on-device model. Your questions and the answers are processed on your device and are never sent to me.",
+              "Chat conversations are not saved. They are cleared when you tap the clear button or when the app closes. The chat needs a device that supports Apple Intelligence, with it turned on.",
+              "Answers come from an AI model and can be wrong. Check them against the text."
+            ]
+          },
+          {
+            "id": "permissions",
+            "title": "Permissions",
+            "paragraphs": [
+              "Frible asks for one permission, and only if you turn on daily verse reminders in Settings. Read-aloud uses your device’s built-in voices and needs no permission."
+            ],
+            "items": [
+              "Notifications: to show one reminder a day with a verse. The reminder is scheduled on your device; no server sends it."
+            ]
+          },
+          {
+            "id": "sharing",
+            "title": "Sharing",
+            "paragraphs": [
+              "Frible never shares anything on its own. When you copy a verse, it goes to your device’s clipboard, and you decide where to paste it."
+            ]
+          },
+          {
+            "id": "deleting",
+            "title": "Deleting your data",
+            "items": [
+              "Remove a highlight or note by swiping it in the Notes tab, or with Remove annotation in the editor.",
+              "Reset reader settings with Reset to Defaults in Appearance.",
+              "Clear a chat with the clear button.",
+              "Delete the Frible app to erase everything it stored on your device."
+            ]
+          },
+          {
+            "id": "children",
+            "title": "Children",
+            "paragraphs": [
+              "Frible doesn’t collect personal information from anyone, including children under 13."
+            ]
+          },
+          {
+            "id": "changes",
+            "title": "Changes to this policy",
+            "paragraphs": [
+              "If a future version handles your information differently, I’ll update this page and the date at the top before that version is released."
+            ]
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Do I need an internet connection?",
+          "answer": "No. The whole Bible, search and the study chat are on your device and work offline."
+        },
+        {
+          "question": "Why can’t I use the study chat?",
+          "answer": "The chat uses Apple Intelligence. It needs a device that supports Apple Intelligence, with Apple Intelligence turned on in Settings. Everything else in Frible works without it."
+        },
+        {
+          "question": "Which translation is included?",
+          "answer": "The Douay-Rheims Bible, Challoner revision (1899 edition), which is in the public domain."
+        },
+        {
+          "question": "How do I add the Daily Verse widget?",
+          "answer": "Touch and hold an empty part of your Home Screen, tap Edit, then Add Widget. Search for Frible and pick a size."
+        },
+        {
+          "question": "Will my highlights move to a new device?",
+          "answer": "They’re part of your iPhone or iPad backup, so restoring that backup on a new device brings them along. Frible doesn’t sync them on its own."
+        }
+      ]
+    },
+    {
+      "slug": "medically",
+      "name": "Medically",
+      "tagline": "Your medical records, private and offline.",
+      "description": [
+        "Medically keeps your lab results, doctor visits, medications and conditions in one place on your iPhone or iPad. It works fully offline: there is no account, no server and no sync.",
+        "Scan or import lab results, dictate visit notes that are transcribed on your device, track prescriptions and their schedules, and group everything by condition so you can share exactly what a doctor needs.",
+        "Medically keeps records. It doesn’t give medical advice, so always talk to a health professional about your health."
+      ],
+      "accent": "sky",
+      "status": "coming-soon",
+      "version": "1.0",
+      "category": "Medical",
+      "languages": [
+        "English",
+        "Spanish"
+      ],
+      "platforms": [
+        {
+          "device": "iphone",
+          "requires": "iOS 17.0 or later"
+        },
+        {
+          "device": "ipad",
+          "requires": "iPadOS 17.0 or later"
+        }
+      ],
+      "features": [
+        "Import lab results as PDFs or photos from Files, Photos, the document scanner or the share sheet, and tag them",
+        "Log visits and symptoms by typing or dictating. Speech is transcribed on your device",
+        "Track medications with dose, form, schedule and the dates you took them",
+        "Link records to a condition, merge conditions, and share everything for one condition at once",
+        "Keep a health profile with blood type, allergies, height and weight history and an emergency contact, with optional import from Apple Health",
+        "Lock the app with Face ID or your passcode, and make a full backup you can restore later"
+      ],
+      "icon": "/apps/medically/icon.png",
+      "screenshots": [
+        {
+          "src": "/apps/medically/screenshots/01.png",
+          "caption": "Lab results",
+          "alt": "Medically screenshot: a list of imported lab results with tags"
+        },
+        {
+          "src": "/apps/medically/screenshots/02.png",
+          "caption": "History",
+          "alt": "Medically screenshot: medical visits and symptom notes"
+        },
+        {
+          "src": "/apps/medically/screenshots/03.png",
+          "caption": "Medications",
+          "alt": "Medically screenshot: a medication with its dose and schedule"
+        },
+        {
+          "src": "/apps/medically/screenshots/04.png",
+          "caption": "Conditions",
+          "alt": "Medically screenshot: records linked to one condition"
+        },
+        {
+          "src": "/apps/medically/screenshots/05.png",
+          "caption": "Profile",
+          "alt": "Medically screenshot: the health profile with blood type and allergies"
+        }
+      ],
+      "supportEmail": "elitegentro@gmail.com",
+      "links": {},
+      "privacy": {
+        "updated": "2026-10-06",
+        "summary": [
+          "Medically doesn’t collect any data. Your health records never reach me or any server.",
+          "Everything is stored on your device, and you can lock the app with Face ID or your passcode.",
+          "Dictation is transcribed on your device, and the recording is deleted right after.",
+          "Your records leave your device only when you share, export or back them up yourself."
+        ],
+        "glance": [
+          {
+            "label": "Data collected",
+            "value": "None"
+          },
+          {
+            "label": "Tracking",
+            "value": "None"
+          },
+          {
+            "label": "Where data lives",
+            "value": "On your device only"
+          },
+          {
+            "label": "Account",
+            "value": "Not needed"
+          },
+          {
+            "label": "Internet",
+            "value": "Not used"
+          }
+        ],
+        "sections": [
+          {
+            "id": "who",
+            "title": "Who this policy is from",
+            "paragraphs": [
+              "Medically is made by GenarApps, an independent developer. This policy explains what happens to your information when you use Medically on iPhone and iPad. “I” in this policy means the developer."
+            ]
+          },
+          {
+            "id": "information-collected",
+            "title": "Information I collect",
+            "paragraphs": [
+              "None. Medically has no accounts and no servers, and it contains no analytics, advertising or crash-reporting tools. The app doesn’t connect to the internet at all, so your records are never sent to me or to anyone else."
+            ]
+          },
+          {
+            "id": "on-your-device",
+            "title": "What stays on your device",
+            "paragraphs": [
+              "Medically saves the records you create on your device:"
+            ],
+            "items": [
+              "Lab results and other files you import, with their tags.",
+              "Visits, symptom notes and dictated text.",
+              "Medications and prescriptions, with dose, form, schedule and dates.",
+              "Conditions and the records linked to them.",
+              "Your health profile: birth date, sex, blood type, height and weight history, allergies and emergency contact.",
+              "App settings, such as whether the app lock is on."
+            ]
+          },
+          {
+            "id": "storage",
+            "title": "How it’s stored",
+            "paragraphs": [
+              "Imported files are saved with iOS’s strongest file protection, so they can’t be read while your device is locked. They also appear in Medically’s folder in the Files app on your device.",
+              "This information is included in your device’s own backups (for example iCloud Backup, if you have it turned on), which Apple handles under its own privacy policy. Medically doesn’t sync it anywhere else."
+            ]
+          },
+          {
+            "id": "apple-health",
+            "title": "Apple Health",
+            "paragraphs": [
+              "If you allow it, Medically reads your birth date, sex, blood type, height and weight from Apple Health to fill in your profile. It only reads; it never writes to Apple Health.",
+              "Health data is used only inside the app. It is never used for advertising and never shared with anyone. You can turn off access at any time in Settings › Privacy & Security › Health."
+            ]
+          },
+          {
+            "id": "permissions",
+            "title": "Permissions",
+            "paragraphs": [
+              "Medically asks for each permission only when you use the feature that needs it. You can change them in your device’s Settings at any time."
+            ],
+            "items": [
+              "Camera: to scan paper lab results with the document scanner.",
+              "Microphone: to dictate notes. A speech model built into the app transcribes the audio on your device, and the recording is deleted as soon as it’s transcribed.",
+              "Contacts: to pick an emergency contact. Medically uses only the contact you choose.",
+              "Face ID: to unlock the app when the app lock is on.",
+              "Health: read-only access, as described above.",
+              "Photos: when you import from Photos, iOS shows a picker and Medically receives only the photos you select."
+            ]
+          },
+          {
+            "id": "sharing",
+            "title": "Sharing, exports and backups",
+            "paragraphs": [
+              "Your records leave your device only when you choose to send them:"
+            ],
+            "items": [
+              "Sharing: you can share a record, or everything linked to a condition, as text and files through the iOS share sheet. Medically shows a notice first. Where it goes next is up to the app or person you pick.",
+              "Backup files: Settings can create a full .medicallybackup file. This file is not encrypted, so anyone who gets it can read your records. Keep it somewhere private, like your own iCloud Drive or a computer you trust.",
+              "Restoring a backup replaces all the data currently in the app."
+            ]
+          },
+          {
+            "id": "deleting",
+            "title": "Deleting your data",
+            "items": [
+              "Delete a single record or attachment inside the app.",
+              "Delete the Medically app to erase all of its data from your device.",
+              "Delete any backup files you exported, since those are separate copies."
+            ]
+          },
+          {
+            "id": "medical-advice",
+            "title": "Not medical advice",
+            "paragraphs": [
+              "Medically helps you keep records. It doesn’t diagnose, treat or give medical advice. Always consult a health professional about your health."
+            ]
+          },
+          {
+            "id": "children",
+            "title": "Children",
+            "paragraphs": [
+              "Medically doesn’t collect personal information from anyone, including children under 13."
+            ]
+          },
+          {
+            "id": "changes",
+            "title": "Changes to this policy",
+            "paragraphs": [
+              "If a future version handles your information differently, I’ll update this page and the date at the top before that version is released."
+            ]
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Does Medically sync between my iPhone and iPad?",
+          "answer": "No. Medically has no sync. To move your records, make a backup in Settings and restore it on the other device."
+        },
+        {
+          "question": "Is the backup file encrypted?",
+          "answer": "No. Anyone who has the file can read it. Keep it somewhere private and delete copies you no longer need."
+        },
+        {
+          "question": "Why does Medically ask for the microphone?",
+          "answer": "Only for dictating notes. Speech is turned into text on your device and the recording is deleted right after."
+        },
+        {
+          "question": "Can Medically explain my lab results?",
+          "answer": "No. Medically stores and organizes your records. Ask a health professional to interpret them."
+        },
+        {
+          "question": "How do I delete everything?",
+          "answer": "Delete the app. There isn’t a single delete-all button yet. Also delete any backup files you exported."
+        }
+      ]
+    },
+    {
+      "slug": "offlineplays",
+      "name": "OfflinePlays",
+      "tagline": "Board games with people nearby. No internet needed.",
+      "description": [
+        "OfflinePlays connects iPhones and iPads that are close to each other over Wi-Fi or Bluetooth, so you can play together anywhere: on a plane, at camp or somewhere with no signal. There are no accounts, servers or ads.",
+        "Find a nearby player, send an invite, pick a game in the lobby and play. If the connection drops, the game reconnects, and a rematch is one tap away."
+      ],
+      "accent": "mint",
+      "status": "coming-soon",
+      "version": "1.0",
+      "category": "Games",
+      "platforms": [
+        {
+          "device": "iphone",
+          "requires": "iOS 26.4 or later"
+        },
+        {
+          "device": "ipad",
+          "requires": "iPadOS 26.4 or later"
+        }
+      ],
+      "features": [
+        "Six two-player games: Tic Tac Toe, Connect Four, Checkers, Chess, Mancala and Fleet Hunt",
+        "A Shared Canvas for up to 8 people, with an optional photo to draw on",
+        "A Nearby screen that finds players and sends invites they can accept or decline",
+        "A lobby with ready checks and a game gallery split into competitive and casual",
+        "A profile with your nickname and your wins, losses and draws for each game",
+        "Automatic reconnection and one-tap rematches"
+      ],
+      "icon": "/apps/offlineplays/icon.png",
+      "screenshots": [
+        {
+          "src": "/apps/offlineplays/screenshots/01.png",
+          "caption": "Nearby",
+          "alt": "OfflinePlays screenshot: the Nearby screen listing players close by"
+        },
+        {
+          "src": "/apps/offlineplays/screenshots/02.png",
+          "caption": "Lobby",
+          "alt": "OfflinePlays screenshot: the lobby with the game gallery"
+        },
+        {
+          "src": "/apps/offlineplays/screenshots/03.png",
+          "caption": "Chess",
+          "alt": "OfflinePlays screenshot: a game of chess in progress"
+        },
+        {
+          "src": "/apps/offlineplays/screenshots/04.png",
+          "caption": "Fleet Hunt",
+          "alt": "OfflinePlays screenshot: a Fleet Hunt board"
+        },
+        {
+          "src": "/apps/offlineplays/screenshots/05.png",
+          "caption": "Shared Canvas",
+          "alt": "OfflinePlays screenshot: several players drawing on the Shared Canvas"
+        }
+      ],
+      "supportEmail": "elitegentro@gmail.com",
+      "links": {},
+      "privacy": {
+        "updated": "2026-10-06",
+        "summary": [
+          "OfflinePlays doesn’t collect any data. There are no accounts, servers, ads or analytics.",
+          "Games are played directly between nearby devices over Wi-Fi or Bluetooth, and the connection is always encrypted.",
+          "Players you connect with see your nickname, your moves and anything you draw or share on the canvas.",
+          "Your profile and stats are stored only on your device."
+        ],
+        "glance": [
+          {
+            "label": "Data collected",
+            "value": "None"
+          },
+          {
+            "label": "Tracking",
+            "value": "None"
+          },
+          {
+            "label": "Shared with",
+            "value": "Nearby players you play with"
+          },
+          {
+            "label": "Account",
+            "value": "Not needed"
+          },
+          {
+            "label": "Internet",
+            "value": "Not used"
+          }
+        ],
+        "sections": [
+          {
+            "id": "who",
+            "title": "Who this policy is from",
+            "paragraphs": [
+              "OfflinePlays is made by GenarApps, an independent developer. This policy explains what happens to your information when you use OfflinePlays on iPhone and iPad. “I” in this policy means the developer."
+            ]
+          },
+          {
+            "id": "information-collected",
+            "title": "Information I collect",
+            "paragraphs": [
+              "None. OfflinePlays has no accounts and no servers, and it contains no analytics, advertising or crash-reporting tools. The app never connects to the internet, so nothing you do in it is sent to me."
+            ]
+          },
+          {
+            "id": "on-your-device",
+            "title": "What stays on your device",
+            "items": [
+              "Your nickname. Until you change it, it’s your device type plus four random characters, like “iPhone 1A2B”.",
+              "A random player ID that identifies you to nearby players, and the name your device uses to announce itself to them.",
+              "Your stats: wins, losses, draws and totals for each game, and a short record of each finished match (the game, the result and the date)."
+            ]
+          },
+          {
+            "id": "backups",
+            "title": "Backups",
+            "paragraphs": [
+              "This information is included in your device’s own backups (for example iCloud Backup, if you have it turned on), which Apple handles under its own privacy policy. OfflinePlays doesn’t sync it anywhere else."
+            ]
+          },
+          {
+            "id": "nearby-play",
+            "title": "Playing with nearby devices",
+            "paragraphs": [
+              "OfflinePlays uses Apple’s Multipeer Connectivity to connect directly to devices near you. Every connection is encrypted, and nothing passes through the internet or a server.",
+              "Here is what other players’ devices receive:"
+            ],
+            "items": [
+              "On the Nearby screen: your nickname, your player ID and whether you’re already in a game.",
+              "During a game: your moves.",
+              "On the Shared Canvas: the lines you draw, and a photo if you pick one as the background. Before a photo is sent, OfflinePlays shrinks it and removes its location and camera details."
+            ]
+          },
+          {
+            "id": "permissions",
+            "title": "Permissions",
+            "paragraphs": [
+              "You can change these in your device’s Settings at any time. Without Local Network and Bluetooth access, OfflinePlays can’t find other players."
+            ],
+            "items": [
+              "Local Network: to find nearby players and host games without the internet.",
+              "Bluetooth: to find and connect to nearby players.",
+              "Photos: when you pick a canvas background, iOS shows a picker and OfflinePlays receives only the photo you select."
+            ]
+          },
+          {
+            "id": "deleting",
+            "title": "Deleting your data",
+            "paragraphs": [
+              "There isn’t a reset button in the app yet. To erase your nickname, player ID and stats, delete the OfflinePlays app. Other players keep their own stats on their own devices."
+            ]
+          },
+          {
+            "id": "children",
+            "title": "Children",
+            "paragraphs": [
+              "OfflinePlays doesn’t collect personal information from anyone, including children under 13. Nearby players can see the nickname you choose, so children shouldn’t use their full name."
+            ]
+          },
+          {
+            "id": "changes",
+            "title": "Changes to this policy",
+            "paragraphs": [
+              "If a future version handles your information differently, I’ll update this page and the date at the top before that version is released."
+            ]
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Why can’t I see other players?",
+          "answer": "Both devices need OfflinePlays open on the Nearby screen, with Wi-Fi and Bluetooth turned on and Local Network access allowed in Settings › Privacy & Security › Local Network. Stay within a few meters of each other."
+        },
+        {
+          "question": "Do we need internet or the same Wi-Fi network?",
+          "answer": "No. Devices connect directly to each other, so you can play with no internet and no shared network."
+        },
+        {
+          "question": "How many people can play?",
+          "answer": "The board games are for two players. The Shared Canvas works for up to 8."
+        },
+        {
+          "question": "How do I reset my stats?",
+          "answer": "There isn’t a reset button yet. Deleting the app erases your stats, nickname and player ID."
+        }
+      ]
+    }
+  ]
+}

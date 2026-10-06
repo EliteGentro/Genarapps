@@ -1,0 +1,292 @@
+@import 'tailwindcss';
+@import '@fontsource/bungee/400.css';
+@import '@fontsource-variable/archivo/wght.css';
+@import '@fontsource/dm-mono/400.css';
+@import '@fontsource/dm-mono/500.css';
+
+/*
+  GenarApps brand tokens. See docs/brand-guidelines.md.
+  Theme values live in --c-* variables. Surfaces map them to contextual
+  variables (--text, --muted, --link, --accent-text, --dot) so text on a
+  Mint or Sky fill always uses Ink, in both themes.
+*/
+:root {
+  --paper: #f2f4ee; /* Newsprint */
+  --panel: #fbfcf8; /* Panel */
+  --line: #1b2430; /* Ink outlines */
+  --shadow: #1b2430; /* Ink hard shadows */
+  --mint: #9ed9b4;
+  --sky: #9cc8f0;
+  --on-fill: #1b2430;
+  --on-fill-muted: #334052;
+
+  --c-text: #1b2430;
+  --c-muted: #56616e; /* Graphite */
+  --c-link: #2d5f9a; /* Harbor */
+  --c-accent-text: #2f7a55; /* Fern */
+  --c-dot: rgb(27 36 48 / 0.13);
+  --dot-on-fill: rgb(27 36 48 / 0.17);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --paper: #17202a;
+    --panel: #202b37;
+    --line: #e6ece7;
+    --shadow: #000000;
+    --mint: #93d1ab;
+    --sky: #93bfe6;
+    --c-text: #e6ece7;
+    --c-muted: #9aa6b2;
+    --c-link: #9cc5f2;
+    --c-accent-text: #8fd6ac;
+    --c-dot: rgb(230 236 231 / 0.07);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --paper: #17202a;
+  --panel: #202b37;
+  --line: #e6ece7;
+  --shadow: #000000;
+  --mint: #93d1ab;
+  --sky: #93bfe6;
+  --c-text: #e6ece7;
+  --c-muted: #9aa6b2;
+  --c-link: #9cc5f2;
+  --c-accent-text: #8fd6ac;
+  --c-dot: rgb(230 236 231 / 0.07);
+  color-scheme: dark;
+}
+
+@theme {
+  --color-*: initial;
+  --radius-*: initial;
+  --shadow-*: initial;
+  --inset-shadow-*: initial;
+  --drop-shadow-*: initial;
+
+  --font-display: 'Bungee', 'Arial Black', Impact, system-ui, sans-serif;
+  --font-sans: 'Archivo Variable', 'Archivo', 'Helvetica Neue', Arial, system-ui, sans-serif;
+  --font-mono: 'DM Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  --spacing-gutter: 22px;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-panel: var(--panel);
+  --color-line: var(--line);
+  --color-shadow: var(--shadow);
+  --color-mint: var(--mint);
+  --color-sky: var(--sky);
+  --color-on-fill: var(--on-fill);
+  --color-ink: var(--text);
+  --color-muted: var(--muted);
+  --color-link: var(--link);
+  --color-fern: var(--accent-text);
+
+  --shadow-chip: 3px 3px 0 0 var(--shadow);
+  --shadow-btn: 4px 4px 0 0 var(--shadow);
+  --shadow-btn-hover: 6px 6px 0 0 var(--shadow);
+  --shadow-panel: 6px 6px 0 0 var(--shadow);
+  --shadow-panel-hover: 9px 9px 0 0 var(--shadow);
+  --shadow-cover: 8px 8px 0 0 var(--shadow);
+}
+
+@layer base {
+  :root,
+  .surface {
+    --text: var(--c-text);
+    --muted: var(--c-muted);
+    --link: var(--c-link);
+    --accent-text: var(--c-accent-text);
+    --dot: var(--c-dot);
+  }
+
+  .surface-fill {
+    --text: var(--on-fill);
+    --muted: var(--on-fill-muted);
+    --link: var(--on-fill);
+    --accent-text: var(--on-fill);
+    --dot: var(--dot-on-fill);
+  }
+
+  html {
+    background: var(--paper);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    min-height: 100dvh;
+    background: var(--paper);
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 3px dashed var(--link);
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background: var(--sky);
+    color: var(--on-fill);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* Halftone: a print-dot texture drawn through a mask so the dot color follows the theme. */
+@utility halftone {
+  isolation: isolate;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: var(--dot);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10'%3E%3Ccircle cx='2.5' cy='2.5' r='1.5'/%3E%3Ccircle cx='7.5' cy='7.5' r='1.5'/%3E%3C/svg%3E")
+      0 0 / 10px 10px repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10'%3E%3Ccircle cx='2.5' cy='2.5' r='1.5'/%3E%3Ccircle cx='7.5' cy='7.5' r='1.5'/%3E%3C/svg%3E")
+      0 0 / 10px 10px repeat;
+  }
+}
+
+@layer components {
+  /* Square speech bubble with a straight tail at the bottom left. */
+  .bubble {
+    position: relative;
+    border: 3px solid var(--line);
+    background: var(--bubble-bg, var(--panel));
+    padding: 14px 16px;
+    margin-bottom: 19px;
+  }
+
+  .bubble::before,
+  .bubble::after {
+    content: '';
+    position: absolute;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+  }
+
+  .bubble::before {
+    left: 26px;
+    bottom: -19px;
+    width: 24px;
+    height: 19px;
+    background: var(--line);
+  }
+
+  .bubble::after {
+    left: 29px;
+    bottom: -12px;
+    width: 14px;
+    height: 12px;
+    background: var(--bubble-bg, var(--panel));
+  }
+
+  /* Eight-point square starburst used for "new" stickers. */
+  .sticker {
+    position: relative;
+    display: grid;
+    place-items: center;
+    flex: none;
+  }
+
+  .sticker::before,
+  .sticker::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    clip-path: polygon(
+      50% 0,
+      63% 15%,
+      85% 15%,
+      85% 37%,
+      100% 50%,
+      85% 63%,
+      85% 85%,
+      63% 85%,
+      50% 100%,
+      37% 85%,
+      15% 85%,
+      15% 63%,
+      0 50%,
+      15% 37%,
+      15% 15%,
+      37% 15%
+    );
+  }
+
+  .sticker::before {
+    background: var(--line);
+  }
+
+  .sticker::after {
+    inset: 4px;
+    background: var(--sticker-bg, var(--sky));
+  }
+
+  /* Long-form text: privacy policies and descriptions. */
+  .prose-comic {
+    max-width: 68ch;
+  }
+
+  .prose-comic p + p {
+    margin-top: 0.9em;
+  }
+
+  .prose-comic a {
+    color: var(--link);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .square-list {
+    display: grid;
+    gap: 10px;
+  }
+
+  .square-list > li {
+    display: grid;
+    grid-template-columns: 12px minmax(0, 1fr);
+    gap: 12px;
+    align-items: start;
+  }
+
+  .square-list > li::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    margin-top: 0.42em;
+    background: var(--bullet, var(--mint));
+    border: 2px solid var(--line);
+  }
+}
