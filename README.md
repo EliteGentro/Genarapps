@@ -77,7 +77,16 @@ public/apps/<slug>/
 
 Until a file exists, the site shows a placeholder in the brand colors: a lettered tile for the icon and a halftone panel with the caption for each screenshot. Drop the files in with the names listed in `apps.json` and they appear. No code changes are needed. Up to 10 screenshots per app, the same limit as the App Store.
 
-## Hosting
+## Hosting and deploys
+
+The site is on Firebase Hosting at https://genarapp.web.app (site `genarapp`, project `genarapps-ce63a`). GitHub Actions deploys it:
+
+- **Push to `main`:** runs `npm run check` (typecheck, lint, tests) and `npm run build`, then deploys to the live site. If any step fails, nothing is deployed. You can also start a deploy by hand from the Actions tab.
+- **Pull request:** runs the same checks and build, then posts a link to a temporary preview of the site in the PR. Pull requests from forks get the checks but no preview.
+
+CI uses the Node version in `.nvmrc`. Deploys sign in with the `FIREBASE_SERVICE_ACCOUNT_GENARAPPS_CE63A` repository secret.
+
+Cache rules in `firebase.json`: hashed files in `/assets/` are cached for a year. Everything else, including pages and `apps.json`, uses `no-cache`, so the browser checks for a newer copy and changes show up right after a deploy.
 
 `npm run build` also copies `index.html` into a folder for every page (`dist/apps/medically/privacy/index.html`, and so on) and to `dist/404.html`. Direct links therefore work on any static host, including GitHub Pages, Netlify, Cloudflare Pages, Vercel and S3, without rewrite rules. If you add an app, rebuild so its pages get their own copies. Until then they are served through `404.html`.
 

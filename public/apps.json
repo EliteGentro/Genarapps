@@ -40,27 +40,27 @@
         {
           "src": "/apps/frible/screenshots/01.png",
           "caption": "Reader",
-          "alt": "Frible screenshot: a chapter open in the reader"
+          "alt": "Frible screenshot: Genesis 1 open in the reader, under the headline “The whole Bible, beautifully set.”"
         },
         {
           "src": "/apps/frible/screenshots/02.png",
           "caption": "Highlights",
-          "alt": "Frible screenshot: highlighted verses with a note"
+          "alt": "Frible screenshot: verses highlighted in color and the Notes list, under the headline “Mark the verses that speak to you.”"
         },
         {
           "src": "/apps/frible/screenshots/03.png",
-          "caption": "Search",
-          "alt": "Frible screenshot: search results for a keyword"
+          "caption": "Smart search",
+          "alt": "Frible screenshot: Smart search results for “peace when I’m anxious”, led by John 16:33, under the headline “Search by meaning, not just words.”"
         },
         {
           "src": "/apps/frible/screenshots/04.png",
           "caption": "Study chat",
-          "alt": "Frible screenshot: the study chat answering a question about a passage"
+          "alt": "Frible screenshot: the study chat answering “What does the Bible say about forgiveness?” with related passages, under the headline “Ask anything. Find it in Scripture.”"
         },
         {
           "src": "/apps/frible/screenshots/05.png",
           "caption": "Daily Verse",
-          "alt": "Frible screenshot: the Daily Verse widget on the Home Screen"
+          "alt": "Frible screenshot: Daily Verse widgets in two sizes on the Home Screen with a 12-day streak, under the headline “A verse a day, on your Home Screen.”"
         }
       ],
       "supportEmail": "elitegentro@gmail.com",
