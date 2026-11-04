@@ -58,7 +58,7 @@ describe('privacy page', () => {
   it('renders every policy section with a table of contents and the contact email', async () => {
     renderAt('/apps/offlineplays/privacy')
     expect(await screen.findByRole('heading', { level: 1, name: 'OfflinePlays privacy policy' })).toBeInTheDocument()
-    expect(screen.getByText('October 6, 2026')).toHaveAttribute('datetime', '2026-10-06')
+    expect(screen.getByText('November 4, 2026')).toHaveAttribute('datetime', '2026-11-04')
     const toc = screen.getByRole('navigation', { name: 'On this page' })
     expect(within(toc).getByRole('link', { name: 'Playing with nearby devices' })).toHaveAttribute('href', '#nearby-play')
     expect(screen.getByRole('heading', { level: 2, name: 'Playing with nearby devices' })).toBeInTheDocument()

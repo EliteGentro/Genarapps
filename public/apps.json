@@ -449,10 +449,10 @@
     {
       "slug": "offlineplays",
       "name": "OfflinePlays",
-      "tagline": "Board games with people nearby. No internet needed.",
+      "tagline": "Play games with people nearby. No internet needed.",
       "description": [
-        "OfflinePlays connects iPhones and iPads that are close to each other over Wi-Fi or Bluetooth, so you can play together anywhere: on a plane, at camp or somewhere with no signal. There are no accounts, servers or ads.",
-        "Find a nearby player, send an invite, pick a game in the lobby and play. If the connection drops, the game reconnects, and a rematch is one tap away."
+        "OfflinePlays turns the iPhones and iPads around you into a game table. Devices connect directly to each other over Wi-Fi and Bluetooth, so you can play together on a plane, at camp or anywhere without a signal. There are no accounts, servers or ads.",
+        "Tap a nearby player to invite them, pick a game in the lobby, tap Ready and play. If a device drops out for a moment, it reconnects and the game carries on where it left off, and a rematch is one tap away."
       ],
       "accent": "mint",
       "status": "coming-soon",
@@ -469,50 +469,56 @@
         }
       ],
       "features": [
-        "Six two-player games: Tic Tac Toe, Connect Four, Checkers, Chess, Mancala and Fleet Hunt",
-        "A Shared Canvas for up to 8 people, with an optional photo to draw on",
         "A Nearby screen that finds players and sends invites they can accept or decline",
-        "A lobby with ready checks and a game gallery split into competitive and casual",
-        "A profile with your nickname and your wins, losses and draws for each game",
-        "Automatic reconnection and one-tap rematches"
+        "A lobby for up to 8 people with ready checks, a game gallery and a win, tie and loss record for the session",
+        "A gallery of games: classics such as Chess, Checkers and Mancala, originals like Fleet Hunt, and a Shared Canvas to draw on together",
+        "Automatic reconnection, so a dropped device picks up where it left off",
+        "One-tap rematches, with someone else moving first",
+        "A profile with your nickname and your record in every game, kept on your device"
       ],
       "icon": "/apps/offlineplays/icon.png",
       "screenshots": [
         {
           "src": "/apps/offlineplays/screenshots/01.png",
-          "caption": "Nearby",
-          "alt": "OfflinePlays screenshot: the Nearby screen listing players close by"
+          "caption": "Play nearby",
+          "alt": "OfflinePlays screenshot: the Nearby list and an invitation from Alex to play Chess, under the headline “Game night, anywhere.”"
         },
         {
           "src": "/apps/offlineplays/screenshots/02.png",
           "caption": "Lobby",
-          "alt": "OfflinePlays screenshot: the lobby with the game gallery"
+          "alt": "OfflinePlays screenshot: a lobby of three players and the game gallery, under the headline “Invite friends. Pick a game.”"
         },
         {
           "src": "/apps/offlineplays/screenshots/03.png",
-          "caption": "Chess",
-          "alt": "OfflinePlays screenshot: a game of chess in progress"
+          "caption": "Play together",
+          "alt": "OfflinePlays screenshot: a game of chess in progress between Alex and Riley, under the headline “Same room, same game.”"
         },
         {
           "src": "/apps/offlineplays/screenshots/04.png",
-          "caption": "Fleet Hunt",
-          "alt": "OfflinePlays screenshot: a Fleet Hunt board"
+          "caption": "Stays connected",
+          "alt": "OfflinePlays screenshot: a Fleet Hunt game waiting for Riley to reconnect, under the headline “Dropped out? Pick up again.”"
         },
         {
           "src": "/apps/offlineplays/screenshots/05.png",
+          "caption": "Rematch",
+          "alt": "OfflinePlays screenshot: a won game of Four in a Row with the Rematch button, under the headline “One more? One tap.”"
+        },
+        {
+          "src": "/apps/offlineplays/screenshots/06.png",
           "caption": "Shared Canvas",
-          "alt": "OfflinePlays screenshot: several players drawing on the Shared Canvas"
+          "alt": "OfflinePlays screenshot: three players drawing together on the Shared Canvas, under the headline “Draw together, live.”"
         }
       ],
       "supportEmail": "elitegentro@gmail.com",
       "links": {},
       "privacy": {
-        "updated": "2026-10-06",
+        "updated": "2026-11-04",
         "summary": [
           "OfflinePlays doesn’t collect any data. There are no accounts, servers, ads or analytics.",
           "Games are played directly between nearby devices over Wi-Fi or Bluetooth, and the connection is always encrypted.",
           "Players you connect with see your nickname, your moves and anything you draw or share on the canvas.",
-          "Your profile and stats are stored only on your device."
+          "Your profile and stats are stored only on your device.",
+          "If you email me, you choose what to send."
         ],
         "glance": [
           {
@@ -548,7 +554,8 @@
             "id": "information-collected",
             "title": "Information I collect",
             "paragraphs": [
-              "None. OfflinePlays has no accounts and no servers, and it contains no analytics, advertising or crash-reporting tools. The app never connects to the internet, so nothing you do in it is sent to me."
+              "None. OfflinePlays has no accounts and no servers, and it contains no analytics, advertising or crash-reporting tools. The app itself never connects to the internet, so nothing you do in it is sent to me, unless you choose to email me (see Contacting me).",
+              "If you’ve turned on Share With App Developers in your device’s Analytics settings, Apple may share anonymous crash reports with me. Apple handles that under its own privacy policy, and you can turn it off at any time."
             ]
           },
           {
@@ -557,7 +564,8 @@
             "items": [
               "Your nickname. Until you change it, it’s your device type plus four random characters, like “iPhone 1A2B”.",
               "A random player ID that identifies you to nearby players, and the name your device uses to announce itself to them.",
-              "Your stats: wins, losses, draws and totals for each game, and a short record of each finished match (the game, the result and the date)."
+              "Your stats: wins, losses, draws and totals for each game, and a short record of each finished match (the game, the result and the date).",
+              "Whether you’ve seen the welcome screen."
             ]
           },
           {
@@ -584,12 +592,21 @@
             "id": "permissions",
             "title": "Permissions",
             "paragraphs": [
-              "You can change these in your device’s Settings at any time. Without Local Network and Bluetooth access, OfflinePlays can’t find other players."
+              "OfflinePlays asks for each permission when it first needs it. You can change them in your device’s Settings at any time. Without Local Network and Bluetooth access, OfflinePlays can’t find other players."
             ],
             "items": [
               "Local Network: to find nearby players and host games without the internet.",
               "Bluetooth: to find and connect to nearby players.",
-              "Photos: when you pick a canvas background, iOS shows a picker and OfflinePlays receives only the photo you select."
+              "Photos (add only): asked only if you choose Save Image when sharing a canvas, so the picture can be saved to your library. OfflinePlays can’t read your photos with it.",
+              "Picking a canvas background uses the system photo picker: OfflinePlays receives only the photo you select, and needs no permission for it."
+            ]
+          },
+          {
+            "id": "sharing",
+            "title": "Sharing",
+            "paragraphs": [
+              "OfflinePlays never shares anything on its own. When you share a canvas, the iOS share sheet opens and you decide where the picture goes.",
+              "Support website, Contact support and Privacy policy in Profile › About open Safari or your mail app, and only when you tap them."
             ]
           },
           {
@@ -597,6 +614,14 @@
             "title": "Deleting your data",
             "paragraphs": [
               "There isn’t a reset button in the app yet. To erase your nickname, player ID and stats, delete the OfflinePlays app. Other players keep their own stats on their own devices."
+            ]
+          },
+          {
+            "id": "contact",
+            "title": "Contacting me",
+            "paragraphs": [
+              "Contact support in Profile › About opens an email in your own mail app, addressed to me, with the app version in the subject. Nothing is sent unless you send it.",
+              "I use these emails only to answer you and to fix problems in OfflinePlays, and I don’t sell or share them. To have our emails deleted, ask me at the same address."
             ]
           },
           {
@@ -618,20 +643,31 @@
       "faq": [
         {
           "question": "Why can’t I see other players?",
-          "answer": "Both devices need OfflinePlays open on the Nearby screen, with Wi-Fi and Bluetooth turned on and Local Network access allowed in Settings › Privacy & Security › Local Network. Stay within a few meters of each other."
+          "answer": "Both devices need OfflinePlays open, with Wi-Fi and Bluetooth turned on and Local Network access allowed in Settings › Privacy & Security › Local Network. Stay within a few meters of each other."
         },
         {
           "question": "Do we need internet or the same Wi-Fi network?",
-          "answer": "No. Devices connect directly to each other, so you can play with no internet and no shared network."
+          "answer": "No. Devices connect directly to each other, so you can play with no internet and no shared network. Wi-Fi and Bluetooth just need to be turned on."
         },
         {
           "question": "How many people can play?",
-          "answer": "The board games are for two players. The Shared Canvas works for up to 8."
+          "answer": "Up to 8 people can join a lobby. The game gallery shows how many players each game seats, and the Shared Canvas works for everyone in the lobby."
+        },
+        {
+          "question": "What happens if the connection drops?",
+          "answer": "OfflinePlays reconnects on its own and the match carries on where it left off. If a device is away for about 45 seconds, or the app is closed, that player leaves the lobby and the match ends."
+        },
+        {
+          "question": "Why does OfflinePlays ask to add to my photos?",
+          "answer": "Only when you share a canvas and choose Save Image. The permission lets the picture be saved; it doesn’t let OfflinePlays see your photos."
         },
         {
           "question": "How do I reset my stats?",
           "answer": "There isn’t a reset button yet. Deleting the app erases your stats, nickname and player ID."
         }
+      ],
+      "languages": [
+        "English"
       ]
     }
   ]
